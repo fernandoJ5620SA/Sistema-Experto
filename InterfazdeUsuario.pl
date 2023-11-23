@@ -17,14 +17,6 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(portada, image, image('portada.jpg')).
  resource('lo siento diagnostico desconocido', image, image('lo_siento_diagnostico_desconocido.jpg')).
 
-
- resource(cancer_de_laringe, image, image('tratamiento_cancer_laringe.jpg')).
- resource(fibrosis_pulmonar, image, image('tratamiento_fibrosis_pulmonar.jpg')).
- resource(enfisema_pulmonar, image, image('tratamiento_enfisema_pulmonar.jpg')).
- resource(faringitis, image, image('tratamiento_faringitis.jpg')).
- resource(amigdalitis, image, image('tratamiento_amigdalitis.jpg')).
- resource(hidrocucion, image, image('tratamiento_hidrocusion.jpg')).
- 
  % gingivitis
  resource(inflamacion_de_encias, image, image('inflamacion_de_encias.jpg')).
  resource(sangrado_al_sepillarse, image, image('sangrado_al_sepillarse.jpg')).
@@ -48,23 +40,27 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(diarea_ocuosa, image, image('diarea_ocuosa.jpg')).
  resource(llagas_en_la_boca, image, image('llagas_en_la_boca.jpg')).
 
-%Intolerancia a la lactosa
-resource(Diarrea, image, image('diarrea_intolerancia_ala_lactosa.jpg')).
-resource(Gases, image, image('gases_intolerancia_ala_lactosa.jpg')).
-resource(Hinchazon, image, image('Hinchazon_intolerancia_ala_lactosa.jpg')).
-resource(Nauseas, image, image('Nauseas_intolerancia_ala_lactosa.jpg')).
-resource(Vomitos, image, image('Vomitos_intolerancia_ala_lactosa.jpg')).
-resource(Dolores_agudos_en_el_abdomen, image, image('Dolores_agudos_en_el_abdomen_intolerancia_ala_lactosa.jpg')).
+ % Intolerancia a la lactosa
+ resource(diarrea, image, image('diarrea.jpg')).
+ resource(gases, image, image('gases.jpg')).
+ resource(hinchazon, image, image('hinchazon.jpg')).
+ resource(nauseas, image, image('nauseas.jpg')).
+ resource(vomito, image, image('vomito.jpg')).
+ resource(dolor_abdominal, image, image('dolor_abdominal.jpg')).
 
-
-%Intolerancia a la lactosa
-
- 
+ % Colitis Ulcerosa
+ resource(diarrea_con_sangre, image, image('diarea_ocuosa.jpg')).
+ resource(colicos_abdominales, image, image('dolor_abdominal.jpg')).
+ resource(fatiga_tres, image, image('fatiga.jpg')).
+ resource(perdida_de_apetitoIII, image, image('perdida_de_apetitoII.jpg')).
+ resource(cu_ganas_de_evacuar, image, image('cu_ganas_de_evacuar.jpg')).
+  
  % Todos los tratamientos importante ponerlos al final.
  resource(gingivitis, image, image('tratamiento_gingivitis.jpg')).
  resource(cirrosis_hepatica, image, image('tratamiento_cirrosis.jpg')).
  resource(enfermedad_de_crohn, image, image('tratamiento_enfermedad_crohn.jpg')).
- resource(Intolerancia_a_la_lactosa, image, image('tratamiento_intoleranciaalalactosa.png')).
+ resource(intolerancia_a_la_lactosa, image, image('tratamiento_intolerancialactosa.jpg')).
+ resource(Colitis_Ulcerosa, image, image('tratamiento_colitis_ulcerosa.jpg')).
 
 
 mostrar_imagen(Pantalla, Imagen) :- new(Figura, figure),
@@ -106,8 +102,8 @@ mostrar_imagen_tratamiento(Pantalla, Imagen) :-new(Figura, figure),
                 new(@btntratamiento,button('Detalles y Tratamiento',
                 message(@prolog, mostrar_tratamiento,Enfermedad)
                 )),
-                send(@main, display,@boton,point(20,450)),
-                send(@main, display,@btntratamiento,point(138,450)).
+                send(@main, display,@boton,point(20,580)),
+                send(@main, display,@btntratamiento,point(250,580)).
 
 
 
@@ -125,7 +121,7 @@ tratamiento(X):- send(@lblExp1,selection('De Acuerdo Al Diagnostico El Tratamien
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
 
-   preguntar(Preg,Resp):-new(Di,dialog('Colsultar Datos:')),
+   preguntar(Preg,Resp):-new(Di,dialog('Consultar Datos:')),
                         new(L2,label(texto,'Responde las siguientes preguntas')),
                         id_imagen_preg(Preg,Imagen),
                         imagen_pregunta(Di,Imagen),
@@ -144,7 +140,7 @@ tratamiento(X):- send(@lblExp1,selection('De Acuerdo Al Diagnostico El Tratamien
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  interfaz_principal:-new(@main,dialog('Sistema Experto Diagnosticador de Enfermedades del Aparato Respiratorio',
+  interfaz_principal:-new(@main,dialog('Sistema Experto - Sistema Digestivo',
         size(1000,1000))),
         new(@texto, label(nombre,'El Diagnostico a partir de los datos es:',font('times','roman',18))),
         new(@resp1, label(nombre,'',font('times','roman',22))),
@@ -156,10 +152,10 @@ tratamiento(X):- send(@lblExp1,selection('De Acuerdo Al Diagnostico El Tratamien
         new(@btntratamiento,button('�Tratamiento?')),
 
         nueva_imagen(@main, img_principal),
-        send(@main, display,@boton,point(138,450)),
-        send(@main, display,@texto,point(20,130)),
-        send(@main, display,@salir,point(300,450)),
-        send(@main, display,@resp1,point(20,180)),
+        send(@main, display,@boton,point(138,580)),
+        send(@main, display,@texto,point(20,270)),
+        send(@main, display,@salir,point(500,580)),
+        send(@main, display,@resp1,point(20,310)),
         send(@main,open_centered).
 
        borrado:- send(@resp1, selection('')).
@@ -167,7 +163,7 @@ tratamiento(X):- send(@lblExp1,selection('De Acuerdo Al Diagnostico El Tratamien
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  crea_interfaz_inicio:- new(@interfaz,dialog('Sistema Experto Diagnosticador de Enfermedades del Aparato Respiratorio',
+  crea_interfaz_inicio:- new(@interfaz,dialog('Sistema Experto - Sistema Digestivo',
   size(1000,1000))),
 
   mostrar_imagen(@interfaz, portada),
