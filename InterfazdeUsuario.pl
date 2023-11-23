@@ -54,6 +54,23 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(fatiga_tres, image, image('fatiga.jpg')).
  resource(perdida_de_apetitoIII, image, image('perdida_de_apetitoII.jpg')).
  resource(cu_ganas_de_evacuar, image, image('cu_ganas_de_evacuar.jpg')).
+
+ % Cancer de estomago
+ resource(Fatiga_tres, image, image('fatiga_tres.jpg')).
+ resource(Sensacion_de, image, image('sensacion_de_hinchazon.jpg')).
+ resource(Saciedad_ra, image, image('saciedad_rapida.jpg')).
+ resource(Indigestion, image, image('indigestion.jpg')).
+ resource(Vomitos_fr, image, image('vomitos_frecuentes.jpg')).
+ resource(Adelgazamiento_in, image, image('adelgazamiento_involuntario.jpg')).
+ resource(Nauseas_dos, image, image('nauseas_dos.jpg')).
+ resource(Dolor_y, image, image('dolor_y_ardor_estomacal.jpg')).
+
+ % Infarto intestinal
+ resource(Dolor_ab, image, image('dolor_abdominal_severo.jpg')).
+ resource(Vomitos_in, image, image('vomitos_infarto.jpg')).
+ resource(Diarrea_o_ex, image, image('diarrea_o_estreñimiento.jpg')).
+ resource(Sangrado_re, image, image('sangrado_rectal.jpg')).
+ resource(Distension, image, image('distension_abdominal.jpg')).
   
  % Todos los tratamientos importante ponerlos al final.
  resource(gingivitis, image, image('tratamiento_gingivitis.jpg')).
@@ -61,6 +78,8 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(enfermedad_de_crohn, image, image('tratamiento_enfermedad_crohn.jpg')).
  resource(intolerancia_a_la_lactosa, image, image('tratamiento_intolerancialactosa.jpg')).
  resource(Colitis_Ulcerosa, image, image('tratamiento_colitis_ulcerosa.jpg')).
+ resource(Cancer_de_estomago, image, image('tratamiento_cancer_estomago.jpg')).
+ resource(Infarto_intestinal, image, image('tratamiento_infarto_intestinal.jpg')).
 
 
 mostrar_imagen(Pantalla, Imagen) :- new(Figura, figure),
