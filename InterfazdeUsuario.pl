@@ -11,6 +11,7 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  :- pce_image_directory('./img').
  :- use_module(library(pce_style_item)).
  :- dynamic color/2.
+ :- encoding(utf8).
 
 
  resource(img_principal, image, image('principal.jpg')).
