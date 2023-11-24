@@ -48,6 +48,15 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(vomito, image, image('vomito.jpg')).
  resource(dolor_abdominal, image, image('dolor_abdominal.jpg')).
 
+%Apendicitis
+resource(dolor_derecho_del_abdomen, image, image('abdominal_lado.jpg')).
+resource(dolor_que_empeora_gradualmente, image, image('dolor_abdominal.jpg')).
+resource(fiebre, image, image('fiebre.jpg')).
+resource(nauseas, image, image('nauseas.jpg')).
+resource(vomito, image, image('vomito.jpg')).
+resource(hinchazon_abdominal, image, image('hinchazon.jpg')).
+resource(diarrea, image, image('diarrea.jpg')).
+
  % Colitis Ulcerosa
  resource(diarrea_con_sangre, image, image('diarea_ocuosa.jpg')).
  resource(colicos_abdominales, image, image('dolor_abdominal.jpg')).
@@ -60,6 +69,7 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(cirrosis_hepatica, image, image('tratamiento_cirrosis.jpg')).
  resource(enfermedad_de_crohn, image, image('tratamiento_enfermedad_crohn.jpg')).
  resource(intolerancia_a_la_lactosa, image, image('tratamiento_intolerancialactosa.jpg')).
+ resource(apendicitis, image, image('tratamiento_apendicitis.jpg')).
  resource(Colitis_Ulcerosa, image, image('tratamiento_colitis_ulcerosa.jpg')).
 
 

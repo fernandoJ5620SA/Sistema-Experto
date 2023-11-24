@@ -22,6 +22,10 @@ conocimiento('intolerancia_a_la_lactosa',
     ['¿Experimenta Diarrea?', '¿Experimenta Gases?', '¿Experimenta Hinchazon?',
      '¿Experimenta Nauseas?', '¿Experimenta Vomitos?', '¿Experimenta Dolores agudos en el abdomen?']).
 
+conocimiento('apendicitis',
+    ['¿Tienes dolor repentino en el lado inferior derecho del abdomen?', '¿Tienes Dolor que empeora gradualmente?', '¿Tienes Fiebre?',
+     '¿Presentas nauseas?', '¿Experimenta Vomitos?', '¿Experimenta hinchazon abdominal?','¿Experimenta Diarrea?']).
+
 conocimiento('Colitis_Ulcerosa',
 ['¿Experimenta Diarrea con sangre o moco?', '¿Tiene colicos abdominales?', 
 '¿Siente fatiga?', '¿Tiene falta de apetito y perdida de peso?', 
@@ -58,6 +62,17 @@ id_imagen_preg('¿Experimenta Hinchazon?', 'hinchazon').
 id_imagen_preg('¿Experimenta Nauseas?', 'nauseas').
 id_imagen_preg('¿Experimenta Vomitos?', 'vomito').
 id_imagen_preg('¿Experimenta Dolores agudos en el abdomen?', 'dolor_abdominal').
+
+
+% apendicitis
+id_imagen_preg('¿Tienes dolor repentino en el lado inferior derecho del abdomen?', 'dolor_derecho_del_abdomen').
+id_imagen_preg('¿Tienes Dolor que empeora gradualmente?', 'dolor_que_empeora_gradualmente').
+id_imagen_preg('¿Tienes Fiebre?', 'fiebre').
+id_imagen_preg('¿Presentas nauseas?', 'nauseas').
+id_imagen_preg('¿Experimenta Vomitos?', 'vomito').
+id_imagen_preg('¿Experimenta hinchazon abdominal?', 'hinchazon_abdominal').
+id_imagen_preg('¿Experimenta Diarrea?', 'diarrea').
+
 
 % Colitis Ulcerosa
 id_imagen_preg('¿Experimenta Diarrea con sangre o moco?', 'diarrea_con_sangre').
