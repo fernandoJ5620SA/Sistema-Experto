@@ -42,6 +42,24 @@ conocimiento('Infarto_intestinal',
     '¿Ha observado la presencia de sangrado rectal?', 
     '¿Ha sentido una distensión abdominal?']).
 
+
+/* Úlcera péptica */
+conocimiento('Ulcera_peptica',
+    ['¿Ha experimentado dolor y ardor estomacal?', 
+    '¿Ha presentado intolerancia a los regrescos con gas?', 
+    '¿Ha presentado nauseas?', 
+    '¿Ha sentido acidez en el estomago?',
+    '¿Ha experimentado sensacion de hincazon?']).
+
+/* Enfermedad celíaca */
+conocimiento('Enfermedad_celiaca',
+    ['¿Ha experimentado un dolor abdominal?', 
+    '¿Ha tenido diarrea ultimamente?', 
+    '¿Ha presentadoIrritabilidad?', 
+    '¿Ha observado decaimiento animico?']).
+
+
+
 /*Oli*/
 % Gingivitis
 id_imagen_preg('¿Tiene inflamacion de las encias?','inflamacion_de_encias').
@@ -100,3 +118,17 @@ id_imagen_preg('¿Ha notado cambios en sus hábitos intestinales, como diarrea o
 id_imagen_preg('¿Ha observado la presencia de sangrado rectal?', 'sangrado_rectal').
 id_imagen_preg('¿Ha sentido una distensión abdominal?', 'distension_abdominal').
 
+
+/* Úlcera péptica */
+id_imagen_preg('¿Ha experimentado dolor y ardor estomacal?', 'dolor_ardor').
+id_imagen_preg('¿Ha presentado intolerancia a los regrescos con gas?', 'intoleran_refrescos').
+id_imagen_preg('¿Ha presentado nauseas?', 'nauseas').
+id_imagen_preg('¿Ha sentido acidez en el estomago?', 'acidez_estomago').
+id_imagen_preg('¿Ha experimentado sensacion de hincazon?', 'sensa_hincha').
+
+
+/* Enfermedad celíaca */
+id_imagen_preg('¿Ha experimentado un dolor abdominal?', 'dolor_adominal').
+id_imagen_preg('¿Ha tenido diarrea ultimamente?', 'diarrea').
+id_imagen_preg('¿Ha presentado Irritabilidad?', 'irritabili').
+id_imagen_preg('¿Ha observado decaimiento animico?', 'decaimiento').

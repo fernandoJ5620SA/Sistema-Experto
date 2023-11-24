@@ -71,6 +71,22 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(Diarrea_o_ex, image, image('diarrea_o_estreñimiento.jpg')).
  resource(Sangrado_re, image, image('sangrado_rectal.jpg')).
  resource(Distension, image, image('distension_abdominal.jpg')).
+
+
+ % Úlcera péptica
+ resource(Dolor_ardo, image, image('dolor_ardor.png')). 
+ resource(Intorerancia_re, image, image('intoleran_refrescos.png')).
+ resource(Nauseass, image, image('nauseas.png')).
+ resource(Acidez_panza, image, image('acidez_estomago.png')).
+ resource(Sensacion_hincha, image, image('sensa_hincha.png')).
+
+ % Enfermedad celíaca
+ resource(Dolor_ado, image, image('dolor_adominal.png')). 
+ resource(Diarrea_one, image, image('diarrea.png')).
+ resource(Irritabili, image, image('irritabili.png')).
+ resource(Decaimien, image, image('decaimiento.png')).
+
+
   
  % Todos los tratamientos importante ponerlos al final.
  resource(gingivitis, image, image('tratamiento_gingivitis.jpg')).
@@ -80,6 +96,8 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(Colitis_Ulcerosa, image, image('tratamiento_colitis_ulcerosa.jpg')).
  resource(Cancer_de_estomago, image, image('tratamiento_cancer_estomago.jpg')).
  resource(Infarto_intestinal, image, image('tratamiento_infarto_intestinal.jpg')).
+ resource(Enfermedad_celiaca, image, image('enfermedad_celiaca.png')).
+ resource(Ulcera_peptica, image, image('ulcera_peptica.png')).
 
 
 mostrar_imagen(Pantalla, Imagen) :- new(Figura, figure),
