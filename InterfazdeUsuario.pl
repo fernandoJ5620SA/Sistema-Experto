@@ -24,6 +24,22 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(mal_aliento, image, image('mal_aliento.jpg')).
  resource(encias_sencibles, image, image('encias_sencibles.jpg')).
 
+ % Apendicitis
+ resource(dolor_derecho_del_abdomen, image, image('abdominal_lado.jpg')).
+ resource(dolor_que_empeora_gradualmente, image, image('dolor_abdominal.jpg')).
+ resource(fiebre, image, image('fiebre.jpg')).
+ resource(nauseas, image, image('nauseas.jpg')).
+ resource(vomito, image, image('vomito.jpg')).
+ resource(hinchazon_abdominal, image, image('hinchazon.jpg')).
+ resource(diarrea, image, image('diarrea.jpg')).
+
+  % Colitis Ulcerosa
+ resource(diarrea_con_sangre, image, image('diarea_ocuosa.jpg')).
+ resource(colicos_abdominales, image, image('dolor_abdominal.jpg')).
+ resource(fatiga_tres, image, image('fatiga.jpg')).
+ resource(perdida_de_apetitoIII, image, image('perdida_de_apetitoII.jpg')).
+ resource(cu_ganas_de_evacuar, image, image('cu_ganas_de_evacuar.jpg')).
+
  % Cirrosis Hepatica
  resource(fatiga, image, image('fatiga.jpg')).
  resource(perdida_de_apetito, image, image('perdida_de_apetito.jpg')).
@@ -31,7 +47,7 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(dificultad_de_respirar, image, image('dificultad_de_respirar.jpg')).
  resource(hinchazon_de_pies, image, image('hinchazon_de_pies.jpg')).
  resource(picazon_en_la_piel, image, image('picazon_en_la_piel.jpg')).
- 
+
 % Enfermedad de Crohn
  resource(dolor_abdominal, image, image('dolor_abdominal.jpg')).
  resource(fiebre, image, image('fiebre.jpg')).
@@ -39,6 +55,36 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(perdida_de_apetitoII, image, image('perdida_de_apetitoII.jpg')).
  resource(diarea_ocuosa, image, image('diarea_ocuosa.jpg')).
  resource(llagas_en_la_boca, image, image('llagas_en_la_boca.jpg')).
+
+ % Cancer de estomago
+ resource(fatiga_tres, image, image('fatiga.jpg')).
+ resource(sensacion_de_hinchazon, image, image('sensa_hinchazon.jpg')).
+ resource(saciedad_rapida, image, image('saciedad_rapida.jpg')).
+ resource(indigestion, image, image('indigestiones.jpg')).
+ resource(vomitos_frecuentes, image, image('vomitos_frecuentes.jpg')).
+ resource(adelgazamiento_invol, image, image('adelgazamiento_involuntario.jpg')).
+ resource(nauseas_dos, image, image('nauseas_dos.jpg')).
+ resource(dolor_y_ardor_estomacal, image, image('dolor_y_ardor_estomacal.jpg')).
+
+ % Infarto intestinal
+ resource(dolor_abdominal_severo, image, image('dolor_abdominal_severo.jpg')).
+ resource(vomitos_infarto, image, image('vomitos_infarto.jpg')).
+ resource(estrenimiento, image, image('estrenimiento.jpg')).
+ resource(sangrado_rectal, image, image('sangrado_rectal.jpg')).
+ resource(distension_abdominal, image, image('distension_abdominal.jpg')).
+
+ % Úlcera péptica
+ resource(dolor_ardor, image, image('dolor_ardor.jpg')). 
+ resource(intoleran_refrescos, image, image('intoleran_refrescos.jpg')).
+ resource(nauseasII, image, image('nauseas_dos.jpg')).
+ resource(acidez_estomago, image, image('acidez_estomago.jpg')).
+ resource(sensa_hincha, image, image('sensa_hinchazon.jpg')).
+
+ % Enfermedad celíaca
+ resource(dolor_abdominal, image, image('dolor_abdominal.jpg')). 
+ resource(diarrea_one, image, image('diarrea.jpg')).
+ resource(irritabilidad, image, image('irritabilidad.jpg')).
+ resource(decaimiento, image, image('decaimiento.jpg')).
 
  % Intolerancia a la lactosa
  resource(diarrea, image, image('diarrea.jpg')).
@@ -48,66 +94,18 @@ Y LUEGO SOLO CONSULTAR TODO, AUTOMATICAMENTE SE ABRIRA LA VENTANA DEL PROGRAMA
  resource(vomito, image, image('vomito.jpg')).
  resource(dolor_abdominal, image, image('dolor_abdominal.jpg')).
 
-%Apendicitis
-resource(dolor_derecho_del_abdomen, image, image('abdominal_lado.jpg')).
-resource(dolor_que_empeora_gradualmente, image, image('dolor_abdominal.jpg')).
-resource(fiebre, image, image('fiebre.jpg')).
-resource(nauseas, image, image('nauseas.jpg')).
-resource(vomito, image, image('vomito.jpg')).
-resource(hinchazon_abdominal, image, image('hinchazon.jpg')).
-resource(diarrea, image, image('diarrea.jpg')).
 
- % Colitis Ulcerosa
- resource(diarrea_con_sangre, image, image('diarea_ocuosa.jpg')).
- resource(colicos_abdominales, image, image('dolor_abdominal.jpg')).
- resource(fatiga_tres, image, image('fatiga.jpg')).
- resource(perdida_de_apetitoIII, image, image('perdida_de_apetitoII.jpg')).
- resource(cu_ganas_de_evacuar, image, image('cu_ganas_de_evacuar.jpg')).
-
- % Cancer de estomago
- resource(Fatiga_tres, image, image('fatiga_tres.jpg')).
- resource(Sensacion_de, image, image('sensacion_de_hinchazon.jpg')).
- resource(Saciedad_ra, image, image('saciedad_rapida.jpg')).
- resource(Indigestion, image, image('indigestion.jpg')).
- resource(Vomitos_fr, image, image('vomitos_frecuentes.jpg')).
- resource(Adelgazamiento_in, image, image('adelgazamiento_involuntario.jpg')).
- resource(Nauseas_dos, image, image('nauseas_dos.jpg')).
- resource(Dolor_y, image, image('dolor_y_ardor_estomacal.jpg')).
-
- % Infarto intestinal
- resource(Dolor_ab, image, image('dolor_abdominal_severo.jpg')).
- resource(Vomitos_in, image, image('vomitos_infarto.jpg')).
- resource(Diarrea_o_ex, image, image('diarrea_o_estreñimiento.jpg')).
- resource(Sangrado_re, image, image('sangrado_rectal.jpg')).
- resource(Distension, image, image('distension_abdominal.jpg')).
-
-
- % Úlcera péptica
- resource(Dolor_ardo, image, image('dolor_ardor.png')). 
- resource(Intorerancia_re, image, image('intoleran_refrescos.png')).
- resource(Nauseass, image, image('nauseas.png')).
- resource(Acidez_panza, image, image('acidez_estomago.png')).
- resource(Sensacion_hincha, image, image('sensa_hincha.png')).
-
- % Enfermedad celíaca
- resource(Dolor_ado, image, image('dolor_adominal.png')). 
- resource(Diarrea_one, image, image('diarrea.png')).
- resource(Irritabili, image, image('irritabili.png')).
- resource(Decaimien, image, image('decaimiento.png')).
-
-
-  
  % Todos los tratamientos importante ponerlos al final.
  resource(gingivitis, image, image('tratamiento_gingivitis.jpg')).
+ resource(apendicitis, image, image('tratamiento_apendicitis.jpg')).
+ resource(colitis_ulcerosa, image, image('tratamiento_colitis_ulcerosa.jpg')).
  resource(cirrosis_hepatica, image, image('tratamiento_cirrosis.jpg')).
  resource(enfermedad_de_crohn, image, image('tratamiento_enfermedad_crohn.jpg')).
+ resource(cancer_de_estomago, image, image('tratamiento_cancer_estomago.jpg')).
+ resource(infarto_intestinal, image, image('tratamiento_infarto_intestinal.jpg')).
+ resource(ulcera_peptica, image, image('tratamiento_ulcera_peptica.jpg')).
+ resource(enfermedad_celiaca, image, image('tratamiento_enfermedad_celiaca.jpg')).
  resource(intolerancia_a_la_lactosa, image, image('tratamiento_intolerancialactosa.jpg')).
- resource(apendicitis, image, image('tratamiento_apendicitis.jpg')).
- resource(Colitis_Ulcerosa, image, image('tratamiento_colitis_ulcerosa.jpg')).
- resource(Cancer_de_estomago, image, image('tratamiento_cancer_estomago.jpg')).
- resource(Infarto_intestinal, image, image('tratamiento_infarto_intestinal.jpg')).
- resource(Enfermedad_celiaca, image, image('enfermedad_celiaca.png')).
- resource(Ulcera_peptica, image, image('ulcera_peptica.png')).
 
 
 mostrar_imagen(Pantalla, Imagen) :- new(Figura, figure),
